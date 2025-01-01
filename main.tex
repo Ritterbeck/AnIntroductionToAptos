@@ -1,8 +1,9 @@
-\documentclass[10pt]{book}
+\documentclass[12pt]{book}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{graphicx}
 \usepackage{listings}
 
 \theoremstyle{definition}
@@ -27,20 +28,14 @@
 \chapter{The Aptos CLI}
 
 \begin{lstlisting}[caption={Creating a Default Profile}]
-$ aptos init
+aptos init
 \end{lstlisting}
 
-\begin{lstlisting}[caption={Default Profile}]
----
-profiles:
-  default:
-    network: Devnet
-    private_key: "0x84d7e6c580de7605e06617baaae8ef3872427345c7f2760b6fe48d9b310d3c85"
-    public_key: "0xccbe7c47f24c93330b527edf86a9e7a4d740457b153af73caa94ebb3b11c93b0"
-    account: 57b1acbe7a48cd30607f38a2a1b14ab2b574b27b5a0246f66eb58163d8ab1878
-    rest_url: "https://fullnode.devnet.aptoslabs.com"
-    faucet_url: "https://faucet.devnet.aptoslabs.com"
-\end{lstlisting}
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{./images/default_profile.png}
+\caption{Default Profile}
+\end{figure}
 
 \begin{lstlisting}[caption={Creating a Named Profile}]
 $ aptos init --profile Alpha
