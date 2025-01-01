@@ -1,0 +1,4 @@
+# Ignore output of pdflatex command
+*.aux
+*.log
+*.pdf
