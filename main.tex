@@ -38,7 +38,23 @@ aptos init
 \end{figure}
 
 \begin{lstlisting}[caption={Creating a Named Profile}]
-$ aptos init --profile Alpha
+aptos init --profile Alpha
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Show Initial Project Options}]
+aptos move init --help
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Create Project Shell}]
+aptos move init --package-dir Transfer --name Transfer
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Create Sender Profile}]
+aptos init --profile Sender
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Create Receiver Profile}]
+aptos init --profile Receiver
 \end{lstlisting}
 
 \end{document}
